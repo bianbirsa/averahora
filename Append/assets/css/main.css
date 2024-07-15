@@ -214,8 +214,8 @@ h6 {
 ------------------------------*/
 .index-page .header {
   --background-color: rgba(255, 255, 255, 0);
-  --heading-color: #ffffff;
-  --nav-color: rgba(255, 255, 255, 0.5);
+  --heading-color: #000000;
+  --nav-color: #000000;
   --nav-hover-color: #ffffff;
 }
 
@@ -663,7 +663,7 @@ h6 {
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
-  color: var(--default-color);
+  color: #060606;
   background-color: var(--background-color);
   position: relative;
 }
@@ -676,6 +676,7 @@ h6 {
 .page-title .heading h1 {
   font-size: 38px;
   font-weight: 700;
+  
 }
 
 .page-title nav {
@@ -791,7 +792,9 @@ section,
 }
 
 .hero .container {
-  position: relative;
+  position: center;
+  align-items: center;
+  justify-content: center;
   z-index: 3;
 }
 
@@ -799,49 +802,18 @@ section,
   margin: 0;
   font-size: 44px;
   font-weight: 700;
+  color: #c06145;
+  
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: #060606;
   margin: 5px 0 0 0;
   font-size: 20px;
+  padding-bottom: 30px;
 }
 
-.hero .sign-up-form {
-  margin-top: 20px;
-  margin-bottom: 15px;
-  padding: 10px;
-  border-radius: 7px;
-  background: color-mix(in srgb, var(--default-color) 5%, white 90%);
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
-  display: flex;
-}
 
-.hero .sign-up-form input[type=email] {
-  background-color: transparent;
-  border: 0;
-  padding: 4px 10px;
-  width: 100%;
-}
-
-.hero .sign-up-form input[type=email]:focus-visible {
-  outline: none;
-}
-
-.hero .sign-up-form input[type=submit] {
-  border: 0;
-  box-shadow: none;
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  padding: 8px 20px 10px 20px;
-  border-radius: 7px;
-  color: var(--contrast-color);
-  transition: 0.3s;
-}
-
-.hero .sign-up-form input[type=submit]:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 10%);
-}
 
 @media (max-width: 768px) {
   .hero h2 {
@@ -852,6 +824,27 @@ section,
     font-size: 18px;
   }
 }
+
+
+#botonhero {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 8px 30px 10px 30px;
+  border-radius: 4px;
+  width: 250px;
+}
+
+#botonhero {
+  background-color:  #c06145;
+}
+
+#botonhero .container {
+  padding-top: 50px;
+  width: 100px;
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Clients Section
@@ -894,18 +887,21 @@ section,
   font-weight: 500;
   line-height: 19px;
   padding: 10px 20px;
-  background: color-mix(in srgb, var(--accent-color), transparent 95%);
-  color: var(--accent-color);
+  background: #ffffff;
+  color: #C06145;
   border-radius: 7px;
   display: inline-block;
+  
 }
 
 .about .content h2 {
   font-weight: 700;
+  color: #f9f9f9;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
+  color: #ffffff;
 }
 
 .about .content .read-more {
@@ -928,10 +924,12 @@ section,
   margin-left: 5px;
   line-height: 0;
   transition: 0.3s;
+
+
 }
 
 .about .content .read-more:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: #DDBFA7;
   padding-right: 19px;
 }
 
@@ -989,6 +987,24 @@ section,
   
 }
 
+#box1 {
+border-radius: 0% 20% 0% 20%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+}
+
+#box2 {
+border-radius: 20% 0% 20% 0%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+}
+
+#box3 {
+border-radius: 20% 0% 20% 0%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+}
+
+
+#box4 {
+border-radius: 0% 20% 0% 20%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+}
+
+
 @media (max-width: 768px) {
 
   .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
@@ -996,6 +1012,157 @@ section,
     margin-top: 0;
   }
 }
+
+
+
+/*--------------------------------------------------------------
+# AboutCURSOS Section
+--------------------------------------------------------------*/
+#aboutcursos .content h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 10px 20px;
+  background: #ffffff;
+  color: #C06145;
+  border-radius: 7px;
+  display: inline-block;
+  
+}
+
+#aboutcursos .content h2 {
+  font-weight: 700;
+  color: #000000;
+}
+
+#aboutcursos .content p:last-child {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.about .content .read-more {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .content .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.aboutcursos .content .read-more:hover {
+  background: #DDBFA7;
+  padding-right: 19px;
+}
+
+.aboutcursos .content .read-more:hover i {
+  margin-left: 10px;
+}
+
+#aboutcursos .icon-box {
+  background-color: #c06145;
+  padding: 50px 40px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  
+  transition: all 0.3s ease-out 0s;
+}
+
+#aboutcursos .icon-box i {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 0;
+  transition: all 0.4s ease-out 0s;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  color: #ffffff;
+}
+
+#aboutcursos .icon-box h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#aboutcursos .icon-box p {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+#aboutcursos .icon-box:hover i {
+  background-color: #ffffff;
+  color: #C06145;
+}
+
+#aboutcursos .icon-boxes .col-md-6:nth-child(2) .icon-box,
+#aboutcursos .icon-boxes .col-md-6:nth-child(4) .icon-box {
+  margin-top: -40px;
+}
+
+
+#aboutcursos {
+  background-color: #ffffff;
+  accent-color: #c06145;
+  
+}
+
+#box11 {
+border-radius: 0% 20% 0% 20%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+
+}
+
+#box22 {
+border-radius: 20% 0% 20% 0%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+}
+
+#box33 {
+border-radius: 20% 0% 20% 0%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+}
+
+
+#box44 {
+border-radius: 0% 20% 0% 20%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+}
+
+
+
+#aboutcursos {
+  background-image: url("/assets/img/about\ CURSO-11.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  #aboutcursos .icon-boxes .col-md-6:nth-child(2) .icon-box,
+  #aboutcursos .icon-boxes .col-md-6:nth-child(4) .icon-box {
+    margin-top: 0;
+  }
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Stats Section
@@ -1127,12 +1294,101 @@ section,
 }
 
 .services {
-  background-image: url("/assets/img/fondo\ cursos\ 1.jpg");
+  background-image: url("/assets/img/TIPS\ PPAL-17.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 
 }
+
+
+
+/*--------------------------------------------------------------
+# Services Section CURSOS
+--------------------------------------------------------------*/
+.services .service-item {
+  position: relative;
+  padding-top: 40px;
+}
+
+.services .service-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.services .service-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--accent-color);
+  border-right: 5px solid var(--background-color);
+}
+
+.services .service-item .icon {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  margin-right: 50px;
+  line-height: 0;
+}
+
+.services .service-item .icon i {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 56px;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+  position: relative;
+}
+
+.services .service-item .icon:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  background: color-mix(in srgb, var(--accent-color), transparent 70%);
+  border-radius: 50px;
+  z-index: 1;
+  bottom: -15px;
+  right: -15px;
+  transition: 0.3s;
+}
+
+.services .service-item .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .service-item .title a {
+  color: var(--heading-color);
+}
+
+.services .service-item .title a:hover {
+  color: var(--accent-color);
+}
+
+.services .service-item .description {
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#servicescursos {
+  background-image: url("/assets/img/clases\ CURSO-20.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+}
+
+
 
 
 /*--------------------------------------------------------------
@@ -1190,8 +1446,7 @@ section,
 }
 
 .features .features-item img {
-  border: 6px solid var(--surface-color);
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .features .features-item .features-img-bg {
@@ -1199,9 +1454,11 @@ section,
   min-height: 500px;
 }
 
+
 @media (max-width: 640px) {
   .features .features-item .features-img-bg {
     min-height: 300px;
+   
   }
 }
 
@@ -1211,7 +1468,7 @@ section,
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .features .features-item .image-stack {
@@ -1219,6 +1476,8 @@ section,
   position: relative;
   grid-template-columns: repeat(12, 1fr);
 }
+
+
 
 .features .features-item .image-stack .stack-back {
   grid-column: 4/-1;
@@ -1234,6 +1493,16 @@ section,
   width: 100%;
   z-index: 2;
 }
+
+
+.features {
+  background-image: url("/assets/img/fondo\ cursos\ 1.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Section
@@ -1301,10 +1570,11 @@ section,
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
+  color: #ffffff;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #ffffff;
   font-size: 14px;
   margin-bottom: 0;
   padding-right: 50px;
@@ -1316,7 +1586,7 @@ section,
   right: 50px;
   font-size: 24px;
   top: calc(50% - 14px);
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #ffffff;
   transition: 0.3s;
   line-height: 0;
 }
@@ -1336,6 +1606,51 @@ section,
   bottom: 0;
 }
 
+#img1 {
+  border-radius: 20% 0% 20% 0%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+  }
+
+  #img2 {
+    border-radius: 0% 20% 0% 20%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+    }
+
+    #img3 {
+      border-radius: 20% 20% 0% 20%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+      }
+
+      #img4 {
+        border-radius: 0% 20% 0% 20%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+        }     
+
+        #img5 {
+          border-radius: 20% 20% 20% 20%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+          }
+
+          #img6 {
+            border-radius: 0% 20% 0% 20%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+            }
+
+            #img7 {
+              border-radius: 20% 0% 20% 0%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+              }
+
+              #img8 {
+                border-radius: 0% 20% 20% 20%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+                }
+
+                #img9 {
+                  border-radius: 20% 0% 20% 0%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+                  }
+
+                  .portfolio {
+                    background-image: url("/assets/img/portfolio\ CURSOS-12.jpg");
+                    background-repeat: no-repeat;
+                    background-position: center top;
+                    background-size: cover;
+                  
+                  }
+
+
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
@@ -1353,7 +1668,7 @@ section,
   padding: 60px 40px;
   height: 100%;
   position: relative;
-  border-radius: 15px;
+  border-radius: 20% 0% 20% 0%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
 }
 
 .pricing h3 {
@@ -1485,6 +1800,193 @@ section,
   }
 }
 
+.pricing {
+  background-image: url("/assets/img/precio\ CURSOS-14.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Pricing Section CURSOS
+--------------------------------------------------------------*/
+.pricingcursos {
+  padding: 60px 0 120px 0;
+}
+
+.pricingcursos .section-title {
+  margin-bottom: 40px;
+}
+
+#pricingcursos .pricing-item {
+  background-color: var(--surface-color);
+  box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
+  padding: 60px 40px ;
+  height: 100%;
+  position: center;
+  border-radius: 20% 0% 20% 0%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+}
+
+
+
+.pricing h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.pricing .icon {
+  margin: 30px auto 20px auto;
+  width: 70px;
+  height: 70px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+}
+
+.pricing .icon i {
+  color: var(--background-color);
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+  line-height: 0;
+}
+
+.pricing .icon::before {
+  position: absolute;
+  content: "";
+  height: 86px;
+  width: 86px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.pricing .icon::after {
+  position: absolute;
+  content: "";
+  height: 102px;
+  width: 102px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-2px);
+}
+
+.pricing h4 {
+  font-size: 48px;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-family: var(--heading-font);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.pricingcursos h4 sup {
+  font-size: 28px;
+}
+
+.pricingcursos h4 span {
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.pricingcursos ul {
+  padding: 20px 0;
+  list-style: none;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  text-align: left;
+  line-height: 20px;
+}
+
+.pricingcursos ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.pricingcursos ul i {
+  color: #059652;
+  font-size: 24px;
+  padding-right: 3px;
+}
+
+.pricingcursos ul .na {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.pricingcursos ul .na i {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.pricingcursos ul .na span {
+  text-decoration: line-through;
+}
+
+#pricingcursos .buy-btn {
+  color: #c06145;
+  display: inline-block;
+  padding: 8px 40px 10px 40px;
+  border-radius: 50px;
+  border: 1px solid ;
+  transition: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+  transition: 0.3s;
+}
+
+#pricingcursos .buy-btn:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.pricingcursos .featured {
+  z-index: 10;
+  border: 3px solid var(--accent-color);
+}
+
+
+
+.pricingcursos {
+  background-image: url("/assets/img/precio\ CURSOS-14.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+}
+
+#pricingcursos .container .col-lg-4 {
+  padding-left: 0px;
+  padding-right: 0%;
+  min-width: 400px;
+  position: center;
+  margin-left: auto;
+margin-right: auto;
+
+}
+
+@media (min-width: 992px) {
+  .pricingcursos .featured {
+    transform: scale(1.15);
+    max-width: 800px;
+  }
+  #pricingcursos {
+    padding-left: 0px;
+    min-width: 100px;
+  }  
+}
+
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
@@ -1505,6 +2007,7 @@ section,
   margin-bottom: 20px;
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  border-radius: 0% 5% 0% 5%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
 }
 
 .faq .faq-container .faq-item:last-child {
@@ -1574,20 +2077,34 @@ section,
   color: var(--accent-color);
 }
 
+.faq {
+  background-image: url("/assets/img/preguntas\ CURSOS-15.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+}
+
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+
+.team {
+background-color: #ffffff;
+}
+
 .team .member {
   position: relative;
+ 
 }
 
 .team .member .member-img {
   margin: 0 80px;
-  border-radius: 50%;
+  border-radius: 0%;
   overflow: hidden;
   position: relative;
-  border: 4px solid var(--background-color);
-  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.2);
+  border-radius: 20% 20% 20% 20%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+ 
 }
 
 @media (max-width: 1024px) {
@@ -1654,6 +2171,121 @@ section,
   visibility: visible;
   opacity: 1;
 }
+
+.team {
+  background-image: url("/assets/img/beneficios-19.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+}
+
+/*--------------------------------------------------------------
+# Team Section CURSOS
+--------------------------------------------------------------*/
+
+#newteam h2 {
+  color: #ffffff;
+}
+
+#newteam p {
+  color: #ffffff;
+}
+
+
+
+  .team .member {
+    position: relative;
+   
+  }
+  
+  .team .member .member-img {
+    margin: 0 80px;
+    border-radius: 0%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20% 20% 20% 20%;/*superior izquierdo, superior derecho,inferior derecho, inferior izquierdo*/;
+   
+  }
+  
+  @media (max-width: 1024px) {
+    .team .member .member-img {
+      margin: 0 60px;
+    }
+  }
+  
+  .team .member .member-img img {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .team .member .member-img .social {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    padding-bottom: 20px;
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .team .member .member-img .social a {
+    transition: 0.3s;
+    color: var(--contrast-color);
+    font-size: 20px;
+    margin: 0 8px;
+  }
+  
+  .team .member .member-img .social a:hover {
+    color: var(--accent-color);
+  }
+  
+  .team .member .member-info {
+    margin-top: 30px;
+  }
+  
+  #newteam .member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 18px;
+    color: #ffffff;
+
+  }
+  
+  #newteam .member .member-info span {
+    font-style: italic;
+    display: block;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  #newteam .member .member-info p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  .team .member:hover .member-img .social {
+    padding-bottom: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  #newteam {
+    background-image: url("/assets/img/fondo\ curvas\ ok\ de\ alto-10.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+
+
+
+
 
 /*--------------------------------------------------------------
 # Call To Action Section
@@ -1725,9 +2357,15 @@ section,
   font-size: 32px;
 }
 
+.testimonials {
+  background-color: #ffffff;
+}
+
+
 .testimonials .swiper {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
   background-color: var(--surface-color);
+  border-radius: 50px 50px 50px 50px;/* superior izquierdo, superior derecho, inferior derecho, inferior izquierdo*/
 }
 
 .testimonials .testimonials-carousel,
@@ -1740,6 +2378,7 @@ section,
   min-height: 200px;
   position: relative;
   margin: 30px;
+  
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1831,12 +2470,29 @@ section,
   }
 }
 
+.testimonials {
+  background-image: url("/assets/img/testimonios\ ppal-18.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+}
+
+
 /*--------------------------------------------------------------
 # Recent Posts Section
 --------------------------------------------------------------*/
+
+.recent-posts h2 {
+color: #ffffff;
+}
+
+.recent-posts p {
+  color: #ffffff;
+  }
+
 .recent-posts article {
-  background: var(--surface-color);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  
   padding: 30px;
   height: 100%;
   border-radius: 10px;
@@ -1851,7 +2507,7 @@ section,
 
 .recent-posts .post-category {
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -1860,15 +2516,16 @@ section,
   font-weight: 700;
   padding: 0;
   margin: 0 0 20px 0;
+ 
 }
 
 .recent-posts .title a {
-  color: var(--heading-color);
+  color: #ffffff;
   transition: 0.3s;
 }
 
 .recent-posts .title a:hover {
-  color: var(--accent-color);
+  color: #DDBFA7;
 }
 
 .recent-posts .post-author-img {
@@ -1880,32 +2537,46 @@ section,
 .recent-posts .post-author {
   font-weight: 600;
   margin-bottom: 5px;
+  color: #ffffff;
 }
 
 .recent-posts .post-date {
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: #ffffff;
   margin-bottom: 0;
 }
+
+
+
+.recent-posts {
+  background-image: url("/assets/img/fono\ ondas\ actualizadoox\ ppal-20.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+}
+
+
 
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {
-  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  background: #C06145;
   padding: 30px;
 }
 
 .contact .info-item i {
   font-size: 38px;
   line-height: 0;
-  color: var(--accent-color);
+  color: #ffffff;
 }
 
 .contact .info-item h3 {
   font-size: 20px;
   font-weight: 700;
   margin: 20px 0 10px 0;
+  color: #ffffff;
 }
 
 .contact .info-item p {
@@ -1913,12 +2584,14 @@ section,
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  color: #ffffff;
 }
 
 .contact .php-email-form {
-  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  background: #C06145;
   padding: 30px;
   height: 100%;
+  border-radius: 50px 50px 50px 50px;/* superior izquierdo, superior derecho, inferior derecho, inferior izquierdo*/
 }
 
 .contact .php-email-form input[type=text],
@@ -1927,22 +2600,23 @@ section,
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 10px 10px 10px 10px;/* superior izquierdo, superior derecho, inferior derecho, inferior izquierdo*/
   color: var(--default-color);
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border-color: #ffffff;
 }
 
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
+  background-color: #f9f9f9;
 }
 
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: #ffffff;
 }
 
 .contact .php-email-form button[type=submit] {
@@ -1952,11 +2626,39 @@ section,
   padding: 10px 30px;
   transition: 0.4s;
   border-radius: 4px;
+  color: #c06145;
+  background-color: #ffffff;
 }
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
+
+#cuadro1 {
+border-radius: 0px 50px 0px 50px;/* superior izquierdo, superior derecho, inferior derecho, inferior izquierdo*/
+}
+
+#cuadro2 {
+  border-radius: 50px 0px 50px 0px;/* superior izquierdo, superior derecho, inferior derecho, inferior izquierdo*/
+  }
+  
+  #cuadro3 {
+    border-radius: 50px 0px 50px 0px;/* superior izquierdo, superior derecho, inferior derecho, inferior izquierdo*/
+    }
+    
+
+    #cuadro4 {
+      border-radius: 0px 50px 0px 50px;/* superior izquierdo, superior derecho, inferior derecho, inferior izquierdo*/
+      }
+      
+      .contact {
+        background-image: url("/assets/img/contacto\ CURSOS-16.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+      
+      }
+
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
@@ -2271,8 +2973,8 @@ section,
 # Blog Posts Section
 --------------------------------------------------------------*/
 .blog-posts article {
-  background-color: var(--surface-color);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  
+ 
   padding: 30px;
   height: 100%;
   border-radius: 10px;
@@ -2323,6 +3025,15 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin-bottom: 0;
 }
+
+.blog-posts {
+  background-image: url("/assets/img/materiales\ CURSOS-13.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+}
+
 
 /*--------------------------------------------------------------
 # Blog Pagination Section
